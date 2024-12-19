@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+**ClipNest - Video Vault 🚀**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ClipNest is a full-stack web application that allows users to securely upload, store, and watch videos. Built with ReactJS, Spring Boot, and MongoDB, the application follows a microservices architecture for scalability and modularity.
 
-## Available Scripts
+**Key Features 🌟**
+1) User Authentication 🔑: Secure user registration and login with JWT-based authentication.
+2) Video Upload 🎥: Upload and store video files.
+3) Video Playback ▶️: Watch uploaded videos directly on the platform.
+4) Profile Management 🧑‍💻: Users can update and manage their profiles.
+5) Microservices Architecture ⚙️: Separate services for user and video management for better scalability.
+6) MongoDB Integration 🗃️: User and video metadata stored in MongoDB.
 
-In the project directory, you can run:
+**Technologies Used 🛠️**
 
-### `npm start`
+**Frontend (ReactJS) 💻**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ReactJS 🔥: JavaScript library for building interactive UIs.
+Tailwind  CSS 🎨: CSS framework for responsive design.
+React Router 🔄: Navigate between pages and components.
+Axios 📡: For making HTTP requests to the backend services.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Backend (Spring Boot) ⚙️**
 
-### `npm test`
+Spring Boot 🌱: For building robust and scalable backend services.
+JWT Authentication 🔐: Secure login and token-based authentication.
+MongoDB 🗃️: NoSQL database to store user data and video metadata.
+Spring Security 🛡️: For securing the backend and APIs.
+Spring Data MongoDB 🔗: To interact with MongoDB.
+Microservices ⚙️: Separated services for better modularity.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**Microservices Architecture 🏗️**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ClipNest follows a microservices architecture with two main services:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+UserService 👤: Manages user authentication, profiles, and data.
+VideoService 🎥: Handles video uploads, metadata, and playback.
+These services communicate via REST API 🔗 for smooth interaction.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**JWT Authentication 🔐**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+JWT tokens are used to authenticate users:
+After login, the backend sends a JWT token to the frontend.
+The token is stored in localStorage 🔒 and sent with each subsequent request for authenticated actions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Database 🗃️**
+MongoDB 🗄️: Used for storing user data and video metadata.
+Ensure MongoDB is running locally or on the cloud.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Contact 📬**
+For any questions, reach out to:
 
-## Learn More
+Email: mohansarady@gmail.com 📧
+GitHub: mohancoder2k 👨‍💻
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
